@@ -1,5 +1,19 @@
-.demo {
-  color: blue;
-}
+/* Error: Declarations may only be used within style rules.
+ *   ,
+ * 9 |   background-color: aqua;
+ *   |   ^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   app.scss 9:3      @content
+ *   _mixins.scss 9:5  minWidth()
+ *   app.scss 8:1      root stylesheet */
 
-/*# sourceMappingURL=app.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Declarations may only be used within style rules.\a   \2577 \a 9 \2502    background-color: aqua;\d\a   \2502    ^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   app.scss 9:3      @content\a   _mixins.scss 9:5  minWidth()\a   app.scss 8:1      root stylesheet";
+}

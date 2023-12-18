@@ -7,7 +7,7 @@
 
 # DAC DIEM SASS/SCSS
 
-1. su dung bien
+1. su dung bien co dau `$`
 
 ```scss
 $textColor: red;
@@ -16,7 +16,7 @@ p {
 }
 ```
 
-2. Nested code (code long nhau)
+2. Nested code (code long nhau dau &)
 
 ```html
 <header class="header">
@@ -32,7 +32,7 @@ p {
 .header {
   color: blue;
   &-inner {
-    //header-inner
+    //tuong tu .header-inner
     color: red;
     &-text {
       color: yellow;
@@ -85,5 +85,34 @@ p {
 ```scss
 @mixin absoluteCenter($direction: "left") {
   position: absolute;
+
+  if($direction =="left") {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  if($direction =="top") {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  if($direction == "both") {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
+
+//goi su dung
+@include absoluteCenter("both");
 ```
+
+4. nhung file scss khac vao file scss voi `@import`
+
+```scss
+//vi du nhung file _variables.scss vao app.scss
+@import "./_variable";
+@import "./_mixins";
+```
+
+5. su dung function
