@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, ad!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit autem ipsum deserunt obcaecati fugit perspiciatis consectetur vel inventore hic ab.</p>
+    </div>
+    <ul>
+        <li class="header__menu-item">1</li>
+        <li class="header__menu-item">2</li>
+        <li class="header__menu-item">3</li>
+        <li class="header__menu-item">4</li>
+        <li class="header__menu-item">5</li>
+    </ul>
+
+    <!-- climb-up `^` 
+        div+div>p>span+em^bq
+    -->
+    <div></div>
+    <div>
+        <p><span></span><em></em></p>
+        <blockquote></blockquote>
+    </div>
+
+    <!-- climb-up ^
+        div+div>p>span+em^^bq
+    -->
+    <div></div>
+    <div>
+        <p><span></span><em></em></p>
+    </div>
+    <blockquote></blockquote>
+
+    <!-- div>(header>ul>li*2>a+footer>p) -->
+    <div>
+        <header>
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </header>
+        <footer>
+            <p></p>
+        </footer>
+    </div>
+
+    <!-- ul>li.item$*5 -->
+    <ul>
+        <li class="item1"></li>
+        <li class="item2"></li>
+        <li class="item3"></li>
+        <li class="item4"></li>
+        <li class="item5"></li>
+    </ul>
+</body>
+</html>
