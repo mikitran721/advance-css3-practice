@@ -28,10 +28,10 @@
 ## RUNNING
 - don vi em vs rem
 - su khac nhau giua vw vs %
+- ham calc()
 - intrinsic size
 - currentColor
 - so sanh `initial - unset - inherit`
-- ham calc()
 - box-sizing (2parts)
 - responsive text
 - transform-origin
