@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .wrap1{
+            height: 200px;
+            width: 100%;
+            background-color: #6A5AF9;
+        }
+        .boxed1{
+            width: 50px;
+            height: 50px;
+            background-color: #F62682;
+            /* center with dp:block; */
+            margin: 0 auto;
+        }
+        .boxed2{
+            width: 50px;
+            height: 50px;
+            background-color: #cbd413;
+            /* center with dp:inline-block */
+            display: inline-block;
+            /* margin: 0 auto; */
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        
+        .wrap2{
+            height: 200px;
+            width: 100%;
+            background-color: #16b46a;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap1">
+        <div class="boxed1"></div>
+    </div>
+
+    <div class="wrap2">
+        <div class="boxed2"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- td[colspan=3 rowspan=3 title] -->
+    <td colspan="3" rowspan="2" title=""></td>
+
+    <!-- [a='value1' b='value2'] -->
+    <div a="value1" b="value2"></div>
+
+    <!-- H$[title=item$]{Header $}*3 -->
+    <H1 title="item1">Header 1</H1>
+    <H2 title="item2">Header 2</H2>
+    <H3 title="item3">Header 3</H3>
+
+    <!-- ul>li.item$$${Item $$$}*5 -->
+    <ul>
+        <li class="item001">Item 001</li>
+        <li class="item002">Item 002</li>
+        <li class="item003">Item 003</li>
+        <li class="item004">Item 004</li>
+        <li class="item005">Item 005</li>
+    </ul>
+
+    <!-- ul>li.item$@-*5 -->
+    <ul>
+        <li class="item5"></li>
+        <li class="item4"></li>
+        <li class="item3"></li>
+        <li class="item2"></li>
+        <li class="item1"></li>
+    </ul>
+
+    <!-- ul>li.item$@3%5 -->
+    <ul>
+        <li class="item3"></li>
+        <li class="item4"></li>
+        <li class="item5"></li>
+        <li class="item6"></li>
+        <li class="item7"></li>
+    </ul>
+
+    <!-- climb-up `^` 
+        div+div>p>span+em^bq
+    -->
+    <div></div>
+    <div>
+        <p><span></span><em></em></p>
+        <blockquote></blockquote>
+    </div>
+
+    <!-- climb-up ^
+        div+div>p>span+em^^bq
+    -->
+    <div></div>
+    <div>
+        <p><span></span><em></em></p>
+    </div>
+    <blockquote></blockquote>
+
+    <!-- div>(header>ul>li*2>a+footer>p) -->
+    <div>
+        <header>
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </header>
+        <footer>
+            <p></p>
+        </footer>
+    </div>
+
+    <!-- ul>li.item$*5 -->
+    <ul>
+        <li class="item1"></li>
+        <li class="item2"></li>
+        <li class="item3"></li>
+        <li class="item4"></li>
+        <li class="item5"></li>
+    </ul>
+</body>
+</html>

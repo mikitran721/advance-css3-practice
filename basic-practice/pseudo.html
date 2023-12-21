@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* :is & :where
+            trong do :where co do uu tien thap
+        */
+        .artical :is(h1,h2,h3){
+            color: red;
+        }
+        .artical :is(h1,h2,h3):hover{
+            color: aqua;
+        }
+
+        .artical:where(h1,h3,h2){
+            color: blue;
+        }
+
+        /* ::before vs ::after */
+        .heading::before{
+            content: "Before new";
+        }
+
+        .heading::after{
+            content: "After new";
+        }
+
+        /* circle */
+        .list{
+            position: relative;
+        }
+        .before{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: cyan;
+        }
+
+        #div2{
+            /* position: relative; */
+        }
+        #list2::before, #list2::after{
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: orange;
+            border-radius: 50%;
+        }
+
+        /* dung ::before de hien thi sau */
+        #list3{
+            position: relative;
+            display: inline-block;
+            padding-right: 15px;
+        }
+
+        #list3::before{
+            content: "";
+            position: absolute;
+            right: 0;
+            top:50%;
+            transform: translateY(-50%);
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: brown;
+        }
+
+        /* ::before with #list4 */
+        #list4{
+            display: inline-block;
+            position: relative;
+        }
+        #list4::before{
+            content: "";
+            position:absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: olive;
+            right: -12px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        /* ::before with circle */
+        #circle{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 100rem;
+            background-color: #FF6651;
+        }
+
+        #circle::before{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #20E3B2;
+            z-index: -1;
+            border-radius: inherit;
+            transform: scale(2);
+        }
+
+        /* #circle2 */
+        #circle2{
+            /* padding-top: 100px; */
+            margin-top: 20px;
+            margin-left: 20px;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 100rem;
+            background-color: #F62682;
+        }
+        #circle2::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+            background-color: #6A5AF9;
+            z-index: -1;
+            transform: scale(2);
+        }
+    </style>
+</head>
+<body>
+    <div id="circle"></div>
+
+    <div class="artical">
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+    </div> <br>
+    <div class="heading">
+        <span>before1</span>
+        :before vs :after
+        <span>after1</span>
+    </div>
+    <!-- :before vs :after -->
+    <div class="list">
+        <div><span class="before"></span>Text1</div>
+        <span class="before"></span>
+        Text test
+    </div>
+
+    <div id="list2">
+        Text2
+    </div>
+
+    <div id="list3">Text3</div><br>
+
+    <div id="list4">
+        <span class="before1"></span>
+        Text4
+    </div><br>
+
+    <div id="circle2"></div>
+</body>
+</html>
