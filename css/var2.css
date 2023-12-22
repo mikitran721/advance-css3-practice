@@ -1,0 +1,8 @@
+:root {
+  --primary: #2cccff;
+  --secondary2: #f62682;
+}
+.item1,
+.item2 {
+  color: var(--primary);
+}

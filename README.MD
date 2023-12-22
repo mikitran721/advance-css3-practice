@@ -1,12 +1,15 @@
 # THUC HANH VOI CSS3
+
 # HUU ICH
+
 - dung `fallback color`: su dung gia tri thay the cho bien khi no ko ton tai
+
 ```css
-:root{
-  --color:red;
+:root {
+  --color: red;
 }
-.list{
-  color:var(--color,blue);
+.list {
+  color: var(--color, blue);
   /* khi --color khong ton tai thi se lay gia tri `blue` thay the */
 }
 ```
@@ -25,6 +28,7 @@
 ## 3. margin vs transform-translate ; top-left;
 
 # DANH MUC THUC HANH 01
+
 ## DONE
 
 - selectors & combinators (2parts)
@@ -37,10 +41,11 @@
 - width, min-width vs max-width
 
 ## RUNNING
+
 - don vi em vs rem
 - su khac nhau giua vw vs %
 - bien trong css (bien trong scss sai $varName)
-- ham calc()
+- ham calc() >>> thuc hanh bs sau flex
 - responsive text
 - intrinsic size
 - currentColor
@@ -53,13 +58,14 @@
 - ham radial-gradient
 
 # DANH MUC THUC HANH 02
+
 - clip-path polygon
 - transform-origin
 - transform:scale
 - box-shadow
 - responsive voi media screen
 - responsive voi container Query
-...
+  ...
 
 ## THUC HANH SAU
 
