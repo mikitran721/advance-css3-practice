@@ -1,4 +1,15 @@
 # THUC HANH VOI CSS3
+# HUU ICH
+- dung `fallback color`: su dung gia tri thay the cho bien khi no ko ton tai
+```css
+:root{
+  --color:red;
+}
+.list{
+  color:var(--color,blue);
+  /* khi --color khong ton tai thi se lay gia tri `blue` thay the */
+}
+```
 
 ## 1.SELECTORS
 
@@ -28,21 +39,22 @@
 ## RUNNING
 - don vi em vs rem
 - su khac nhau giua vw vs %
+- bien trong css (bien trong scss sai $varName)
+- ham calc()
+- responsive text
 - intrinsic size
 - currentColor
 - so sanh `initial - unset - inherit`
-- ham calc()
 - box-sizing (2parts)
-- responsive text
-- transform-origin
 - grid
 - flex
 - thuoc tinh ve position (thuc hanh dropdown sau flex)
-- clip-path polygon
 - shape-outside
 - ham radial-gradient
 
 # DANH MUC THUC HANH 02
+- clip-path polygon
+- transform-origin
 - transform:scale
 - box-shadow
 - responsive voi media screen
@@ -51,11 +63,11 @@
 
 ## THUC HANH SAU
 
+- cach hoat dong cua LINEAR GRADIENT
 - tao tam giac cho ribbon
 - tim hieu Atomic css - tu build frameword css nhu tailwindcss
 - hieu ung focus cho input
 - curve backgound effects
-- cach hoat dong cua LINEAR GRADIENT
 - code Sticky table (basic)
 - code 1 kute ghost
 - slick slider

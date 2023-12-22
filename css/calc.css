@@ -1,0 +1,8 @@
+:root{
+    --fz:20px;
+    --line-height-design:30px;
+}
+.text{
+    font-size: calc(var(--line-height-design) + var(--fz));
+    line-height: calc(30 / 16);
+}
