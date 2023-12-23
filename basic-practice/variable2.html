@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable - fallback color</title>
+    <link rel="stylesheet" href="/css/var2.css">
+    <style>
+        .list{
+            /* local variable
+                uu tien hon :root
+            */
+            --primary:red;
+        }
+        .item1{
+            /* fallback color */
+            color:var(--secondary,#7151ff);
+        }
+    </style>
+</head>
+<body>
+    <div class="list">
+        <div class="item1">1</div>
+    </div>
+    <div class="list2">
+        <div class="item2">2</div>
+    </div>
+</body>
+</html>

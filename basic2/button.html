@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button center</title>
+    <style>
+        .button{
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            /* min-width: 110px; */
+            border-radius: 8px;
+            background-color: #F62682;
+            color: white;
+            /* margin:0 auto; */
+        }
+
+        .loader{
+            width: 10px;
+            height: 10px;
+            border: 5px solid white;
+            border-top: 5px solid transparent;
+            border-radius: 100%;
+            animation: animate2 1s linear infinite;
+        }
+
+        @keyframes animate2{
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+        .fetching{
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn{
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-wrapper{
+            width: 200px;
+            /* text-align: center; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <button class="button">
+        Fetching
+    </button>
+    <button class="button">
+        <div class="loader"></div>
+    </button>
+    <a href="#" class="fetching">Loading</a>
+    <span class="btn">Button</span>
+    <div class="btn-wrapper"><span>Lorem ipsum</span></div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intrinsic size</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+
+        .wrapper{
+            width: 400px;
+            background-color: #eee;
+        }
+
+        .button{
+            display: block;
+            background: #ff6bcb;
+            color:white;
+            padding: 20px;
+            font-size: 30px;
+            margin: 0 auto;
+            /* intrinsic size: min-content, max-content, fit-content */
+            /* width: min-content; */
+            /* width: max-content; */
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <a href="#" class="button">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, voluptatem!</a>
+    </div>
+</body>
+</html>

@@ -1,13 +1,32 @@
 # THUC HANH VOI CSS3
+
 # HUU ICH
-- dung `fallback color`: su dung gia tri thay the cho bien khi no ko ton tai
+
+1. dung `fallback color`: su dung gia tri thay the cho bien khi no ko ton tai
+
 ```css
-:root{
-  --color:red;
+:root {
+  --color: red;
 }
-.list{
-  color:var(--color,blue);
+.list {
+  color: var(--color, blue);
   /* khi --color khong ton tai thi se lay gia tri `blue` thay the */
+}
+```
+
+2. dung `intrinsic size` ap dung voi block - ap dung margin-auto
+
+```css
+a {
+  display: block;
+  padding: 20px;
+  margin: 0 auto; /** center */
+  /* min-content lay chieu dai theo chu dai nhat trong chuoi */
+  width: min-content;
+  /* max-content lay chieu dai = full length cua chuoi; co the gay scroll khi text qua dai */
+  width: max-content;
+  /* fit-content hay dc su dung, lay do dong full theo width cua em-daddy va se rot chu xuong khi qua dai */
+  width: fit-content;
 }
 ```
 
@@ -25,6 +44,7 @@
 ## 3. margin vs transform-translate ; top-left;
 
 # DANH MUC THUC HANH 01
+
 ## DONE
 
 - selectors & combinators (2parts)
@@ -37,12 +57,13 @@
 - width, min-width vs max-width
 
 ## RUNNING
+
 - don vi em vs rem
 - su khac nhau giua vw vs %
 - bien trong css (bien trong scss sai $varName)
-- ham calc()
+- ham calc() >>> thuc hanh bs sau flex
 - responsive text
-- intrinsic size
+- intrinsic size (kich co ben trong: min-content, max-content, fit-content)
 - currentColor
 - so sanh `initial - unset - inherit`
 - box-sizing (2parts)
@@ -53,13 +74,14 @@
 - ham radial-gradient
 
 # DANH MUC THUC HANH 02
+
 - clip-path polygon
 - transform-origin
 - transform:scale
 - box-shadow
 - responsive voi media screen
 - responsive voi container Query
-...
+  ...
 
 ## THUC HANH SAU
 

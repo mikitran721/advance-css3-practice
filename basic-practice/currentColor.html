@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Color</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        .boxed{
+            width: 100px;
+            height: 100px;
+            color: #e74c3c;
+            /* mau cua border lu nay la currentColor */
+            /* border: 1px solid; */
+            font-size: 80px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            /* background-color: rgba(0, 128, 0, 0.058); */
+        }
+        .boxed::before{
+            /* lay color theo daddy-.boxed */
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border-radius: inherit;
+            background-color: currentColor;
+            opacity: 0.1;
+        }
+
+        .boxed2{
+            width: 150px;
+            height: 150px;
+            color:blueviolet;
+            font-size: 100px;
+            border-radius: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .boxed2::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border-radius: inherit;
+            background-color: currentColor;
+            opacity: 0.1;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxed">
+        <ion-icon name="alarm-outline"></ion-icon>
+    </div>
+    <div class="boxed2">
+        <ion-icon name="logo-apple"></ion-icon>
+    </div>
+</body>
+</html>
