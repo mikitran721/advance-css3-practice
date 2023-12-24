@@ -30,6 +30,8 @@ a {
 }
 ```
 
+3. responsive text: using `clamp(min,val,max)`; search with `font size clamp generator`
+
 ## 1.SELECTORS
 
 - toan tu `+` phan tu lien ke

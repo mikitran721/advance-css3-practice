@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive text: clamb(min,value,max)</title>
+    <style>
+        html{
+            /* font-size: 62.5%; */
+        }
+        .boxed{
+            height: 200px;
+            /* width: 200px; */
+            /* width:min(val1,val2) */
+            /* width: min(500px,100%); */
+            width: max(500px,100%);
+            background-image: linear-gradient( to right,#2cccff , #20e3b2);
+        }
+        /* @media screen and (max-width: 767.98px) {
+            .boxed{
+                width: 100%;
+            }
+        } */
+        
+        .heading{
+            color: #FF6651;
+            /* font-size: 24px; */
+            font-weight: bold;
+            line-height: 1.5;
+            /* font-size: clamp(20px,1vw + 16px,30px); */
+            font-size: clamp(1.25rem, 0.9028rem + 1.1111vw, 1.875rem);
+        }
+        /* @media screen and (max-width: 767.98px) {
+        .heading{
+            font-size: 20px;
+        }
+        } */
+        
+    </style>
+</head>
+<body>
+    <div class="boxed"></div>
+    <h1 class="heading">Guide to Installing and Configuring Grafana on AWS EC2 with MySQL Database Integration</h1>
+</body>
+</html>
