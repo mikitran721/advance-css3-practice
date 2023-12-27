@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-search-img</title>
+    <style>
+        .header{
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        .header-logo{
+            flex-shrink: 0;
+            max-width: 50px;
+        }
+
+        .header-right{
+            background-color: #20E3B2;
+            flex:1;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .search{
+            flex:1;
+            background-color: #fff;
+            padding: 5px;
+        }
+        .auth{
+            flex-shrink: 0;
+        }
+
+        /* lan 2 */
+        .box2{
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .box2-logo{
+            max-width: 50px;
+            flex-shrink: 0;
+        }
+
+        .box2-right{
+            flex:1;
+            background-color: chartreuse;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .box2-search{
+            flex:1;
+            padding: 5px;
+            background-color: #fff;
+        }
+
+        .box2-auth{
+            flex-shrink: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="https://images.unsplash.com/photo-1701364406051-156d47df2477?dpr=1&h=280&w=280&auto=format&fit=crop&q=60&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzAzNDczMjUzfA&ixlib=rb-4.0.3" alt="" class="header-logo">
+        <div class="header-right">
+            <div class="search"></div>
+            <div class="auth">
+                <span>Login</span>
+                <span>Register</span>
+            </div>
+        </div>
+    </header>
+
+    <header class="box2">
+        <img src="https://images.unsplash.com/photo-1682687220247-9f786e34d472?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw1Nnx8fGVufDB8fHx8fA%3D%3D" alt="" class="box2-logo">
+        <div class="box2-right">
+            <div class="box2-search"></div>
+            <div class="box2-auth">
+                <span>Login</span>
+                <span>Register</span>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
