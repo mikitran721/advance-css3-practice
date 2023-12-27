@@ -18,3 +18,6 @@ grid-column: 2 / span2;
 grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 ```
+
+- `grid-auto-flow:column | row` huong tu dong cua grid theo row how column;
+- `grid-auto-columns: size` kich thuoc tu dong cua moi cot - grid
