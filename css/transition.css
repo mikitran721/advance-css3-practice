@@ -1,0 +1,9 @@
+body {
+  font-size: 20px;
+}
+.link {
+  transition: all 0.2s linear;
+}
+.link:hover {
+  color: chocolate;
+}
