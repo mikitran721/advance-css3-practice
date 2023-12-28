@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Dropdown 2</title>
+    <style>
+      body {
+        padding: 25px;
+        font-size: 20px;
+        line-height: 1.2;
+      }
+      .dropdown {
+        width: 300px;
+        background-color: #eee;
+        position: relative;
+      }
+      .dropdown-select {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid red;
+        padding: 10px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      .dropdown-list {
+        border: 1px solid blue;
+        border-radius: 6px;
+        font-weight: 500;
+        /* margin-top: 20px; */
+        background-color: white;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        /* 100% phan tu daddy */
+        z-index: 2;
+        left: 0;
+        /* an element su dung hieu ung */
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.2s ease;
+      }
+      .dropdown-item {
+        padding: 20px;
+        border-bottom: 1px solid coral;
+        border-radius: inherit;
+        cursor: pointer;
+        font-size: 22px;
+      }
+      .dropdown:hover .dropdown-list {
+        opacity: 1;
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <div class="dropdown-select">
+        <span class="dropdown-value">Figma</span>
+        <ion-icon name="caret-down-outline"></ion-icon>
+      </div>
+      <div class="dropdown-list">
+        <div class="dropdown-item">title</div>
+        <div class="dropdown-item">title</div>
+        <div class="dropdown-item">title</div>
+      </div>
+    </div>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis et at
+      sed repellendus! Reprehenderit assumenda, quasi perspiciatis autem eum
+      repellat, tenetur dolor non vitae asperiores tempora perferendis animi
+      saepe itaque.
+    </p>
+  </body>
+</html>
