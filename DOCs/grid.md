@@ -10,3 +10,14 @@ grid-row: 1/2;
 grid-row: 1 / span 2;
 grid-column: 2 / span2;
 ```
+
+- voi `auto-fit` voi grid se co gang lap day khoang trong
+- voi `auto-fill` chi co gang lap day cot
+
+```css
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+```
+
+- `grid-auto-flow:column | row` huong tu dong cua grid theo row how column;
+- `grid-auto-columns: size` kich thuoc tu dong cua moi cot - grid

@@ -31,6 +31,7 @@ a {
 ```
 
 3. responsive text: using `clamp(min,val,max)`; search with `font size clamp generator`
+4. key search tim hieu hieu ung, co code san hoc theo `button hover effects tympanus`
 
 ## 1.SELECTORS
 
